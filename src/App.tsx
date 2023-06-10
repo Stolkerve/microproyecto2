@@ -4,6 +4,7 @@ import Login from "./views/Login";
 import Signup from "./views/Signup";
 import Profile from "./views/Profile";
 import Movie from "./views/Movie";
+import Admin from "./views/Admin";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/movie" element={<Movie />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </div>
