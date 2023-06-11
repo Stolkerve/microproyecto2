@@ -1,7 +1,15 @@
 import React from "react";
+import Carousel from "../components/Carousel";
+
+import MoviesList from "../components/MoviesList";
 
 const Landing = () => {
-  return <div>Landing</div>;
+  return (
+    <>
+      <Carousel />
+      <MoviesList />
+    </>
+  );
 };
 
 export default Landing;
