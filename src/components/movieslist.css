@@ -7,3 +7,10 @@
   align-items: center;
   gap: 4rem;
 }
+
+.movies-list-button {
+    border-radius: 0px 12px 12px 0px;
+    background-color: #01105f;
+    color: white;
+    text-align: center;
+}

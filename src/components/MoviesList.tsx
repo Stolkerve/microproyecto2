@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./movieslist.css";
 import { Movie, MovieRaw } from "../models/Movie";
 import { Gender } from "../models/Gender";
+import {FaSearch} from "react-icons/fa"
 
 const MoviesList = () => {
   const [movies, setMovies] = useState<Movie[]>([])
@@ -52,14 +53,16 @@ const MoviesList = () => {
       <form>
         <input type="text" placeholder="Nombre de una pelicula" />
         <button
-          style={{ borderRadius: "0px 12px 12px 0px", backgroundColor: "#01105f", color: "white" }}
+          className="movies-list-button"
         >
-          Buscar
+          <FaSearch/>
         </button>
       </form>
       <div>
-        {movies.map(() => {
-          return <></>;
+        {movies.map((m) => {
+          return (
+            <></>
+          )
         })}
       </div>
     </div>
