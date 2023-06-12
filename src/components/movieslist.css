@@ -14,3 +14,47 @@
     color: white;
     text-align: center;
 }
+
+.movies-card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.movie-card {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 52rem;
+  max-height: 238px;
+}
+
+.movie-card:hover {
+  cursor: pointer;
+}
+
+.movie-card-conteiner {
+  padding: 1rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card-img {
+  border-radius: 12px;
+  height: 14rem;
+}
+
+@media only screen and (max-width: 600px) {
+.movie-card {
+  flex-direction: column;
+  max-height: 538px
+}
+
+
+}
+
