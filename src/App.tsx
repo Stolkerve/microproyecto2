@@ -34,7 +34,7 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/movie" element={<Movie />} />
+            <Route path="/movie/:id" element={<Movie />} />
             {user ? (
               <>
                 <Route path="/profile" element={<Profile />} />
