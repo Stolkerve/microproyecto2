@@ -1,62 +1,71 @@
 import React from "react";
-import "./login.css"
+import "./login.css";
 const Profile = () => {
-  return `<div class="contenedor">
-  <header class="header">
-      <section class="button"><h3>Menu</h3></section>
-      <section class="button"><h3>Salir</h3></section>
-  </header>
-  <div class="banner">
-      <h1>BIENVENIDO(A) SR(A) CARLOS PEREZ</h1>
-  </div>
-  <div class="favorites-movies-contender">
-      <div class="favorites-movies">
-          <header class="header-favorites-movies">
-              <h2>MIS PELICULAS FAVORITAS</h2>
-          </header>
-          <div class="content-favorites-movies">
-              <div class="movie">
-                  <section class="image">
-                      <img src="" alt="No image" srcset="">
-                  </section>
-                  <section class="info">
-                      <header class="title">
-                          <h3>Titulo</h3>
-                      </header>
-                      <section>
-                          <p class="text"> <img src="" alt="No image" srcset="">  Desmarcar como favorita </p>
-                      </section>
-                  </section>
-              </div>
-          </div>
+  return (
+    <div className="contenedor">
+      <header className="header">
+        <section className="button">
+          <h3>Menu</h3>
+        </section>
+        <section className="button">
+          <h3>Salir</h3>
+        </section>
+      </header>
+      <div className="banner">
+        <h1>BIENVENIDO(A) SR(A) CARLOS PEREZ</h1>
       </div>
-  </div>
- 
-  <div class="bookins-contender">
-      <div class="bookins">
-          <header class="header-bookins">
-              <h2>MIS RESERVACIONES</h2>
+      <div className="favorites-movies-contender">
+        <div className="favorites-movies">
+          <header className="header-favorites-movies">
+            <h2>MIS PELICULAS FAVORITAS</h2>
           </header>
-          <div class="content-bookins">
-              <div class="movie2">
-                  <section class="image">
-                      <img src="" alt="No image" srcset="">
-                  </section>
-                  <section class="info2">
-                      <header class="title">
-                          <h3>Titulo</h3>
-                      </header>
-                      <section>
-                          <p class="text"> Pelicula: </p>
-                          <p class="text"> Fecha de funcion: </p>
-                          <p class="text"> Cantidad de Boletos: </p>
-                      </section>
-                  </section>
-              </div>
+          <div className="content-favorites-movies">
+            <div className="movie">
+              <section className="image">
+                <img src="" alt="No image" />
+              </section>
+              <section className="info">
+                <header className="title">
+                  <h3>Titulo</h3>
+                </header>
+                <section>
+                  <p className="text">
+                    {" "}
+                    <img src="" alt="No image" /> Desmarcar como favorita{" "}
+                  </p>
+                </section>
+              </section>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>`;
+
+      <div className="bookins-contender">
+        <div className="bookins">
+          <header className="header-bookins">
+            <h2>MIS RESERVACIONES</h2>
+          </header>
+          <div className="content-bookins">
+            <div className="movie2">
+              <section className="image">
+                <img src="" alt="No image" />
+              </section>
+              <section className="info2">
+                <header className="title">
+                  <h3>Titulo</h3>
+                </header>
+                <section>
+                  <p className="text"> Pelicula: </p>
+                  <p className="text"> Fecha de funcion: </p>
+                  <p className="text"> Cantidad de Boletos: </p>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Profile;

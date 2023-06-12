@@ -35,7 +35,14 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/movie" element={<Movie />} />
-            {/* { user ? <PrivateRoutes /> : <Navigate to={"/"} /> } */}
+            {user ? (
+              <>
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/admin" element={<Admin />} />
+              </>
+            ) : (
+              <></>
+            )}
 
             <Route path="*" element={<Navigate to={"/"} />} />
           </Routes>
@@ -43,15 +50,6 @@ function App() {
         </div>
       )}
     </div>
-  );
-}
-
-function PrivateRoutes() {
-  return (
-    <>
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/admin" element={<Admin />} />
-    </>
   );
 }
 

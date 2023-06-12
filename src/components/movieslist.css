@@ -9,10 +9,10 @@
 }
 
 .movies-list-button {
-    border-radius: 0px 12px 12px 0px;
-    background-color: #01105f;
-    color: white;
-    text-align: center;
+  border-radius: 0px 12px 12px 0px;
+  background-color: #01105f;
+  color: white;
+  text-align: center;
 }
 
 .movies-card-container {
@@ -50,11 +50,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-.movie-card {
-  flex-direction: column;
-  max-height: 538px
+  .movie-card {
+    flex-direction: column;
+    max-height: 538px;
+  }
 }
-
-
-}
-

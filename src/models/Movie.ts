@@ -25,4 +25,3 @@ export interface MovieRaw {
   title: string;
   vote_average: number;
 }
-
