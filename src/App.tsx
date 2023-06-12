@@ -4,9 +4,9 @@ import Login from "./views/Login";
 import Signup from "./views/Signup";
 import Profile from "./views/Profile";
 import Movie from "./views/Movie";
-import Admin from "./views/Admin";
+
 import { useEffect, useState } from "react";
-import { User, onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
 import { firebaseAuth } from "./firebase/client";
 import { useGlobalState } from "./globalState";
 import Navbar from "./components/Navbar";
@@ -36,10 +36,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/movie/:id" element={<Movie />} />
             {user ? (
-              <>
-                <Route path="/profile" element={<Profile />} />
-                <Route path="/admin" element={<Admin />} />
-              </>
+              <Route path="/profile" element={<Profile />} />
             ) : (
               <></>
             )}

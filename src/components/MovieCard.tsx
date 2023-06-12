@@ -1,8 +1,8 @@
 import React from "react";
-import { Movie } from "../models/IMovie";
+import { IMovie } from "../models/IMovie";
 import { useNavigate } from "react-router-dom";
 
-const MovieCard = ({m}: {m: Movie}) => {
+const MovieCard = ({m}: {m: IMovie}) => {
   const navigate = useNavigate()
   return (
     <div onClick={() => navigate(`/movie/${m.id}`)} className="movie-card">

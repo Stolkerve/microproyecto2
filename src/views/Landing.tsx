@@ -45,17 +45,13 @@ const Landing = () => {
       for (let i = 0; i < moviesRaw.length; i++) {
         const movieRaw = moviesRaw[i];
         let newMovie: IMovie = {
-          adult: movieRaw.adult,
-          backdropPath: movieRaw.backdrop_path,
           genreIds: [],
           id: movieRaw.id,
           originalLanguage: movieRaw.original_language,
           originalTitle: movieRaw.original_title,
           overview: movieRaw.overview,
           posterPath: movieRaw.poster_path,
-          releaseDate: movieRaw.release_date,
           title: movieRaw.title,
-          voteAverage: movieRaw.vote_average,
         };
         for (let i = 0; i < movieRaw.genre_ids.length; i++) {
           const gender = gendersMap.get(movieRaw.genre_ids[i]);
